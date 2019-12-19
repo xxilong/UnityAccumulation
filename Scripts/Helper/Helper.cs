@@ -35,10 +35,13 @@ public static class Helper
     /// </summary>
     /// <param name="parentTF"></param>
     /// <returns></returns>
-    public static List<Transform> GetAllChildren(this Transform parentTF)
+    public static List<Transform> GetAllChildren(this Transform parentTF,bool includeSelf=false)
     {
         List<Transform> ChildrenList = new List<Transform>(parentTF.GetComponentsInChildren<Transform>());
+        if (!includeSelf)
+        {
         ChildrenList.Remove(parentTF);
+        }
         return ChildrenList;
     }
     /// <summary>
@@ -115,6 +118,27 @@ public static class Helper
         }
     }
 
+    /// <summary>
+    /// 设置层级
+    /// </summary>
+    /// <param name="tf"></param>
+    /// <param name="layer">层级id</param>
+    /// <param name="includeChild">是否包含子物体</param>
+    public static void SetLayer(this Transform tf,int layer,bool includeChild = false)
+    {
+        if (!includeChild)
+        {
+            tf.gameObject.layer = layer;
+        }
+        else
+        {
+            foreach (var item in tf.GetAllChildren(true))
+            {
+                item.gameObject.layer = layer;
+            }
+        }
+        
+    }
     #endregion
     #region CollectionHelper
     /// <summary>
@@ -124,7 +148,7 @@ public static class Helper
     /// <typeparam name="TKey"></typeparam>
     /// <param name="array">源数组</param>
     /// <param name="handler">排序条件</param>
-    public static void OrderBy<T, TKey>(T[] array, SelectHandler<T, TKey> handler)
+    public static void OrderBy<T, TKey>(this T[] array, SelectHandler<T, TKey> handler)
        where TKey : IComparable<TKey>
     {
         for (int i = 0; i < array.Length - 1; i++)
@@ -144,7 +168,7 @@ public static class Helper
     /// <typeparam name="TKey"></typeparam>
     /// <param name="array">源数组</param>
     /// <param name="handler">排序条件</param>
-    public static void OrderByDescending<T, TKey>(T[] array, SelectHandler<T, TKey> handler)
+    public static void OrderByDescending<T, TKey>(this T[] array, SelectHandler<T, TKey> handler)
         where TKey : IComparable
     {
         for (int i = 0; i < array.Length - 1; i++)
@@ -166,7 +190,7 @@ public static class Helper
     /// <param name="array">源数组</param>
     /// <param name="handler">条件</param>
     /// <returns>获取到的目标</returns>
-    public static T Find<T>(T[] array, FindHandler<T> handler)
+    public static T Find<T>(this T[] array, FindHandler<T> handler)
     {
         foreach (var item in array)
         {
@@ -183,7 +207,7 @@ public static class Helper
     /// <param name="array">源数组</param>
     /// <param name="handler">挑选条件</param>
     /// <returns>符合条件的目标,有责为列表,无则为空</returns>
-    public static T[] FindAll<T>(T[] array, FindHandler<T> handler)
+    public static T[] FindAll<T>(this T[] array, FindHandler<T> handler)
     {
         List<T> tempList = new List<T>();
         foreach (var item in array)
@@ -202,7 +226,7 @@ public static class Helper
     /// <param name="array">源数组</param>
     /// <param name="handler">挑选条件</param>
     /// <returns>符合条件的目标数组</returns>
-    public static TKey[] Select<T, TKey>(T[] array,
+    public static TKey[] Select<T, TKey>(this T[] array,
         SelectHandler<T, TKey> handler)
     {
         TKey[] tempArr = new TKey[array.Length];
@@ -219,7 +243,7 @@ public static class Helper
     /// <param name="array">源数组</param>
     /// <param name="target">目标</param>
     /// <returns></returns>
-    public static bool Contain<T>(T[] array, T target)
+    public static bool Contain<T>(this T[] array, T target)
         where T : IEquatable<T>, IComparable
     {
         bool result = false;
@@ -237,7 +261,7 @@ public static class Helper
     /// <param name="array">源数组</param>
     /// <param name="handler">提取比较关键数据的委托</param>
     /// <returns>按比较关键字找出的最大对象</returns>
-    public static T Max<T, TKey>(T[] array, SelectHandler<T, TKey> handler)
+    public static T Max<T, TKey>(this T[] array, SelectHandler<T, TKey> handler)
         where TKey : IComparable, IComparable<TKey>
     {
         T max = array[0];
@@ -257,7 +281,7 @@ public static class Helper
     /// <param name="array">源数组</param>
     /// <param name="handler">提取比较关键数据的委托</param>
     /// <returns>按比较关键字找出的最小对象</returns>
-    public static T Min<T, TKey>(T[] array, SelectHandler<T, TKey> handler)
+    public static T Min<T, TKey>(this T[] array, SelectHandler<T, TKey> handler)
        where TKey : IComparable, IComparable<TKey>
     {
         T min = array[0];
