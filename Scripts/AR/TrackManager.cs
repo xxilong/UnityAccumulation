@@ -1,7 +1,8 @@
-﻿using System;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using Vuforia;
 
@@ -25,7 +26,7 @@ public class TrackManager : DefaultTrackableEventHandler
         public Transform ImageTarget;
         public Transform modle;
     }
-    public Action onTrackingFound;
+    public UnityEvent onTrackingFound;
     private bool open = false;
     private bool isFirst = true;
 
@@ -64,6 +65,14 @@ public class TrackManager : DefaultTrackableEventHandler
             return;
         }
 
+
+    }
+
+    protected override void Start()
+    {
+        mTrackableBehaviour = TrackManager.instance.trackObject.ImageTarget.GetComponent<TrackableBehaviour>();
+
+        //mTrackableBehaviour?.RegisterTrackableEventHandler(this);
         if (defaultOpen)
         {
             Open();
@@ -72,13 +81,6 @@ public class TrackManager : DefaultTrackableEventHandler
         {
             Close();
         }
-    }
-
-    protected override void Start()
-    {
-        mTrackableBehaviour = TrackManager.instance.trackObject.ImageTarget.GetComponent<TrackableBehaviour>();
-
-        //mTrackableBehaviour?.RegisterTrackableEventHandler(this);
     }
 
     /// <summary>
@@ -92,7 +94,7 @@ public class TrackManager : DefaultTrackableEventHandler
         //trackObject.ImageTarget.gameObject.SetActive(true);  
         mTrackableBehaviour?.RegisterTrackableEventHandler(this);
         trackObject.modle.gameObject.SetActive(false);
-        vuforia.enabled=true;
+        vuforia.enabled = true;
     }
 
     /// <summary>
@@ -151,8 +153,8 @@ public class TrackManager : DefaultTrackableEventHandler
 
         if (onTrackingFound != null)
         {
-            onTrackingFound();
-            onTrackingFound = null;
+            onTrackingFound.Invoke();
+            //onTrackingFound = null;
         }
     }
 
