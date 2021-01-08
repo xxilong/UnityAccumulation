@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>fba58fc8-3ef1-4970-b75f-6d28dd7d09b3</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TUIO</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)OSC\OSCBundle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OSC\OSCMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OSC\OSCPacket.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OSC\OSCReceiver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OSC\OSCTimeTag.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)OSC\OSCTransmitter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioBlob.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioCursor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioListener.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioPoint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TUIO\TuioTime.cs" />
+  </ItemGroup>
+</Project>

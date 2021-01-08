@@ -1,0 +1,2 @@
+E:\Projects\C#\VentuzExtention6\Projects\SmartEdu\UDP2SerPortBank\obj\Debug\UDP2SerPortBank.csproj.CoreCompileInputs.cache
+E:\Projects\C#\VentuzExtention6\Projects\SmartEdu\UDP2SerPortBank\obj\Debug\UDP2SerPortBank.csprojAssemblyReference.cache

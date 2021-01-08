@@ -1,0 +1,2 @@
+E:\Projects\C#\VentuzExtention6\ShareLibToC\obj\Debug\ShareLibToC.csproj.CoreCompileInputs.cache
+E:\Projects\C#\VentuzExtention6\ShareLibToC\obj\Debug\ShareLibToC.csprojAssemblyReference.cache

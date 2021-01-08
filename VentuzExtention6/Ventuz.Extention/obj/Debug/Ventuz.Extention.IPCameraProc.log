@@ -1,0 +1,15 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets(76,5): warning : 文件“e:\projects\c#\ventuzextention6\ventuz.extention\obj\debug\ventuz.extention.pdb”正由另一进程使用，因此该进程无法访问此文件。
+  stdafx.cpp
+  dllmain.cpp
+  IPCameraProc.cpp
+  正在生成代码...
+  AsyncVideo.cpp
+  GraspDesktop.cpp
+  ShareMemory.cpp
+  SyncVideo.cpp
+  TestVideo.cpp
+  VideoFromShareMemory.cpp
+  VideoManager.cpp
+  正在生成代码...
+    正在创建库 E:\Projects\C#\VentuzExtention6\Ventuz.Extention\bin\Debug\Ventuz.Extention.IPCameraProc.lib 和对象 E:\Projects\C#\VentuzExtention6\Ventuz.Extention\bin\Debug\Ventuz.Extention.IPCameraProc.exp
+  Ventuz.Extention.IPCameraProc.vcxproj -> E:\Projects\C#\VentuzExtention6\Ventuz.Extention\bin\Debug\Ventuz.Extention.IPCameraProc.dll

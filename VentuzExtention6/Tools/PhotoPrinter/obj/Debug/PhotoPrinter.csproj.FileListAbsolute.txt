@@ -1,0 +1,2 @@
+E:\Projects\C#\VentuzExtention6\Tools\PhotoPrinter\obj\Debug\PhotoPrinter.csprojAssemblyReference.cache
+E:\Projects\C#\VentuzExtention6\Tools\PhotoPrinter\obj\Debug\PhotoPrinter.csproj.CoreCompileInputs.cache

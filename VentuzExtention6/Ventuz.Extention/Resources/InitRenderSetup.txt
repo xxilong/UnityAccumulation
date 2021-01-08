@@ -1,0 +1,66 @@
+<RenderSetup xmlns="http://www.ventuz.com/RenderSetup/1.0/">
+  <Rects ID="" Name="CLUSTER" Rect="0, 0, 5678, 8765" Origin="0, 0" Color="0, 0, 0" GUID="f2e62f31-a833-4785-8ac7-646384c809dc" xmlns="http://www.ventuz.com/RenderSetupEditor/1.0/">
+    <Rects ID="1" Name="M01" Rect="0, 0, 5678, 8765" Origin="0, 0" Color="0, 0, 0" GUID="86e1844b-3b4c-4b05-a4d9-5194fcf4dea1">
+      <Rects ID="1.1" Name="M01.1" Rect="0, 0, 5678, 8765" Origin="0, 0" Color="1, 0, 0" GUID="5559cc6e-2225-419a-9f3d-0566b8ae4126" />
+    </Rects>
+  </Rects>
+  <Source ID="" Name="CLUSTER" Rect="0, 0, 5678, 8765" Origin="0, 0" Color="0, 0, 0" GUID="f2e62f31-a833-4785-8ac7-646384c809dc">
+    <Rects ID="1" Name="M01" Rect="0, 0, 5678, 8765" Origin="0, 0" Color="0, 0, 0" GUID="86e1844b-3b4c-4b05-a4d9-5194fcf4dea1">
+      <Rects ID="1.1" Name="M01.1" Rect="0, 0, 5678, 8765" Origin="0, 0" Color="1, 0, 0" GUID="5559cc6e-2225-419a-9f3d-0566b8ae4126" />
+    </Rects>
+  </Source>
+  <Planar Name="CLUSTER" Size="5678, 8765" GUID="f2e62f31-a833-4785-8ac7-646384c809dc">
+    <Machine ID="1" Name="M01" Rect="0, 0, 5678, 8765" Color="0, 0, 0" GUID="86e1844b-3b4c-4b05-a4d9-5194fcf4dea1">
+      <Pass ID="1.1" Name="M01.1" Rect="0, 0, 5678, 8765" Offset="0, 0" Color="1, 0, 0" GUID="5559cc6e-2225-419a-9f3d-0566b8ae4126" />
+    </Machine>
+  </Planar>
+  <TouchArea ID=".0" Name="Touch Area" Rect="0, 0, 5678, 8765" Origin="0, 0" Color="0, 0, 0" GUID="f4730eb1-61f4-42b9-802f-eb31e2d3d07a" IsLocked="true" />
+  <Shaping Version="2" VersionAttr="4" SoloEnable="false" ShowOverlapEnable="false" CutOverlapEnable="false" WarpEnable="false" EdgeEnable="false" MaskEnable="false" DarkenOutputs="false" Wireframe="false" DebugEnable="false" WhiteBackground="false" GlobalProjectorGui="Off" OptionLevel="Normal" MousePos_X="0" MousePos_Y="0" MouseHovering="false" KeyboardEditSpeed="4" GuiScale="2" FrameEnable="false" FrameVertex0_X="0" FrameVertex0_Y="0" FrameVertex1_X="0" FrameVertex1_Y="0" MultiSelectMode="false" UseAutomaticEdges="true" MirrorMode="Off" MoveMode="Translate" EditUvMode="false" UseCamForGui="true" ColorCorrectEnable="true" SizeX="5678" SizeY="8765" OutputCount="1" xmlns="http://www.ventuz.com/Shaping/1.0/">
+    <Output Name="M01.1" SystemId="1.1" Solo="false" PosError="0.25" UvError="1" RampError="1" MaxLevel="5" DitherMode="On" DitherAmount="1" ContrastLuma="0.5" BrightnessLuma="0.5" GUID="5559cc6e-2225-419a-9f3d-0566b8ae4126" EnableProjectorGui="true" WarpGroupCount="1" EdgeGroupCount="0" MaskGroupCount="0" xmlns="">
+      <Color Red="1" Green="0" Blue="0" />
+      <Pos X0="0" Y0="0" X1="5678" Y1="8765" />
+      <NavPos X0="0" Y0="0" X1="1" Y1="1" />
+      <Contrast Red="1" Green="1" Blue="1" />
+      <Brightness Red="0" Green="0" Blue="0" />
+      <WarpGroup Mode="Warp" Version="5" Name="Warping" PostWarp="false" Gamma="0.45" GammaR="1" GammaG="1" GammaB="1" FillBlur="1" EnableGroup="true" CamRotX="0" CamRotY="0" CamRotZ="0" CamZoom="1" CamZoomX="1" CamZoomY="1" CamShiftX="0" CamShiftY="0" CamPanX="0" CamPanY="0" CamDist="1" EnableAlpha="false" LayerCount="3" CurrentLayer="0">
+        <UvSection X0="0" Y0="0" X1="1" Y1="1" />
+        <Ramp PointCount="2">
+          <Point X="0" Y="0" />
+          <Point X="1" Y="1" />
+        </Ramp>
+        <RampR PointCount="2">
+          <Point X="0" Y="0" />
+          <Point X="1" Y="1" />
+        </RampR>
+        <RampG PointCount="2">
+          <Point X="0" Y="0" />
+          <Point X="1" Y="1" />
+        </RampG>
+        <RampB PointCount="2">
+          <Point X="0" Y="0" />
+          <Point X="1" Y="1" />
+        </RampB>
+        <Layer SizeX="3" SizeY="3" CursorX="0" CursorY="0" HoverX="-1" HoverY="-1" BinaryPoints="">
+          <PosRange X0="0" Y0="0" X1="5678" Y1="8765" />
+          <UvRange X0="0" Y0="0" X1="1" Y1="1" />
+        </Layer>
+        <Layer SizeX="6" SizeY="6" CursorX="0" CursorY="0" HoverX="-1" HoverY="-1" BinaryPoints="">
+          <PosRange X0="0" Y0="0" X1="5678" Y1="8765" />
+          <UvRange X0="0" Y0="0" X1="1" Y1="1" />
+        </Layer>
+        <Layer SizeX="12" SizeY="12" CursorX="0" CursorY="0" HoverX="-1" HoverY="-1" BinaryPoints="">
+          <PosRange X0="0" Y0="0" X1="5678" Y1="8765" />
+          <UvRange X0="0" Y0="0" X1="1" Y1="1" />
+        </Layer>
+      </WarpGroup>
+    </Output>
+    <CurrentOutput Command="OutputPara" Output="0" Group="-1" Layer="-1" xmlns="" />
+    <CurrentGroup Command="GroupPara" Output="0" Group="0" Layer="-1" xmlns="" />
+    <CurrentLayer Command="LayerPoints" Output="0" Group="0" Layer="0" xmlns="" />
+    <TestPattern Version="1" Kind="Test" Enable="false" ShowFrame="false" ShowId="false" TestCircleSpacing="256" TestGridSize="128" TestWidth="3" CircleSize="256" CircleSpacing="2" CircleWidth="4" GridSize="64" GridSpeed="0" GridWidth="4" FitCorners="false" GrayGradient="false" GrayBarCount="8" ReverseGradient="false" ColorBarStandard="false" ColorGradient="false" ColorBarCount="8" ColorHueStart="0" ColorHueEnd="1" BarSpeed="0" ImagePath="C:\Users\Public\Documents\Ventuz6\Configuration\TestCards" ImageIndex="0" ImageStretch="Fit" MultiplyOutputColor="false" xmlns="">
+      <SolidColor Red="0" Green="1" Blue="0" />
+      <BackColor Red="0" Green="0" Blue="0" />
+      <PatternColor Red="1" Green="1" Blue="1" />
+    </TestPattern>
+  </Shaping>
+</RenderSetup>

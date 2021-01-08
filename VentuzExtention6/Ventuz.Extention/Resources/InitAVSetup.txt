@@ -1,0 +1,28 @@
+<AVConfig xmlns="http://www.ventuz.com/AVConfigFile/1.0/">
+  <Global>
+    <OutputFrameRate>None</OutputFrameRate>
+    <SoftwareWatchdogTimeout>0</SoftwareWatchdogTimeout>
+    <LogVideoEngineState>false</LogVideoEngineState>
+    <ProductName>Ventuz Runtime</ProductName>
+    <ProductVersion>6.3.3.266</ProductVersion>
+    <ProductSerial></ProductSerial>
+    <ProjectName></ProjectName>
+  </Global>
+  <Stream ID="DX_0">
+    <StartInError>false</StartInError>
+    <Multisampling>Best</Multisampling>
+    <BorderColor>0, 0, 0, 127</BorderColor>
+    <EffectBleed>0</EffectBleed>
+    <PipeUsage>Automatic</PipeUsage>
+    <VirtualFullscreen>false</VirtualFullscreen>
+    <ShowPointer>true</ShowPointer>
+    <FrameLock>false</FrameLock>
+    <PreventQueuing>true</PreventQueuing>
+    <FrameRateMultiplier>1</FrameRateMultiplier>
+  </Stream>
+  <VideoInputs>
+  </VideoInputs>
+  <VideoOutputs>
+    <Stream ID="DX_0" />
+  </VideoOutputs>
+</AVConfig>

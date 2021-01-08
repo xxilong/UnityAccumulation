@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0FC9D71C-417A-46C7-8D93-A3ACE86CE6AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ventuz.Extention</RootNamespace>
+    <AssemblyName>Ventuz.Extention</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Atalasoft.dotImage">
+      <HintPath>..\Reference\Atalasoft.dotImage.dll</HintPath>
+    </Reference>
+    <Reference Include="SandDock">
+      <HintPath>..\Reference\SandDock.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ventuz.Config">
+      <HintPath>..\Reference\Ventuz.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Ventuz.Designer">
+      <HintPath>..\Reference\Ventuz.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ventuz.Designer.Shared">
+      <HintPath>..\Reference\Ventuz.Designer.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Ventuz.Kernel">
+      <HintPath>..\Reference\Ventuz.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Ventuz.Kernel.Input">
+      <HintPath>..\Reference\Ventuz.Kernel.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Ventuz.Kernel.IO">
+      <HintPath>..\Reference\Ventuz.Kernel.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Ventuz.Kernel.Remoting, Version=3.50.0.0, Culture=neutral, PublicKeyToken=87793577f9e363ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Ventuz.Kernel.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="Ventuz.Kernel.Remoting4">
+      <HintPath>..\Reference\Ventuz.Kernel.Remoting4.dll</HintPath>
+    </Reference>
+    <Reference Include="Ventuz.Kernel.Shared">
+      <HintPath>..\Reference\Ventuz.Kernel.Shared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compatible\CatchedVentuzWare.cs" />
+    <Compile Include="Compatible\VentuzWare.cs" />
+    <Compile Include="Conf\ExtentionConf.cs" />
+    <Compile Include="Conf\ExtractArchiveMachineConfig.cs" />
+    <Compile Include="Conf\FilePaths.cs" />
+    <Compile Include="Conf\GlobalConfWatcher.cs" />
+    <Compile Include="Conf\OverideSystemConf.cs" />
+    <Compile Include="Conf\VentuzAVConfig.cs" />
+    <Compile Include="Conf\VentuzConfig.cs" />
+    <Compile Include="Conf\VentuzMachineConfig.cs" />
+    <Compile Include="Conf\VentuzRenderConfig.cs" />
+    <Compile Include="Conf\VideoInputEnumer.cs" />
+    <Compile Include="Conf\XmlConfig.cs" />
+    <Compile Include="Control\ConfigedStartup.cs" />
+    <Compile Include="Control\ControlClient.cs" />
+    <Compile Include="Control\ControlServer.cs" />
+    <Compile Include="Control\SingleSel.cs" />
+    <Compile Include="Control\VentuzSchemeReader.cs" />
+    <Compile Include="Detector\MarkerCapture.cs" />
+    <Compile Include="Detector\MarkerChecker.cs" />
+    <Compile Include="Detector\MarkerConfig.cs" />
+    <Compile Include="Detector\MarkerConfigManager.cs" />
+    <Compile Include="Detector\MarkerGeometry.cs" />
+    <Compile Include="Detector\MarkerItem.cs" />
+    <Compile Include="Detector\MarkerRebuild.cs" />
+    <Compile Include="Detector\MathTools.cs" />
+    <Compile Include="Detector\PointBuilds.cs" />
+    <Compile Include="DRZ\DrzStream.cs" />
+    <Compile Include="Marker\CurrentTouchID.cs" />
+    <Compile Include="Marker\EventFilter.cs" />
+    <Compile Include="Marker\EventOperator.cs" />
+    <Compile Include="Marker\TouchEventGroup.cs" />
+    <Compile Include="Marker\TouchInfo.cs" />
+    <Compile Include="Marker\TouchPlayer.cs" />
+    <Compile Include="Marker\TouchPosition.cs" />
+    <Compile Include="Marker\TouchScreen.cs" />
+    <Compile Include="Marker\TouchStatus.cs" />
+    <Compile Include="Marker\TouchToFile.cs" />
+    <Compile Include="Marker\TouchToTUIO.cs" />
+    <Compile Include="Marker\TouchWatcher.cs" />
+    <Compile Include="MatLib\ComponentLibary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MatLib\ComponentLibary.Designer.cs">
+      <DependentUpon>ComponentLibary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatLib\ComponentManager.cs" />
+    <Compile Include="MatLib\NodeExportor.cs" />
+    <Compile Include="MatLib\NodeImportor.cs" />
+    <Compile Include="MatLib\NodeSearcher.cs" />
+    <Compile Include="MatLib\SearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatLib\SearchDialog.Designer.cs">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatLib\VprExport.cs" />
+    <Compile Include="Nodes\CNode\PauseMover.cs" />
+    <Compile Include="Nodes\Helper\TextureCreator.cs" />
+    <Compile Include="Nodes\CNode\IPCameraMovie.cs" />
+    <Compile Include="Nodes\CNode\TcpServer.cs" />
+    <Compile Include="Nodes\Helper\TextureFromNative.cs" />
+    <Compile Include="Nodes\Manop\ContentNode.cs" />
+    <Compile Include="Nodes\Manop\Designer.cs" />
+    <Compile Include="Nodes\Manop\HierarchyNode.cs" />
+    <Compile Include="Nodes\Manop\VentuzNode.cs" />
+    <Compile Include="Nodes\VEComponent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Render\RenderLoading.cs" />
+    <Compile Include="Resource\ExtentionResource.cs" />
+    <Compile Include="Resource\ProjectResource.cs" />
+    <Compile Include="Translate\TransFile.cs" />
+    <Compile Include="Translate\Translate.cs" />
+    <Compile Include="UI\AddMarker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddMarker.Designer.cs">
+      <DependentUpon>AddMarker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExtMenuItems.cs" />
+    <Compile Include="UI\LeftMenus.cs" />
+    <Compile Include="UI\RightMenus.cs" />
+    <Compile Include="UI\ScreenSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ScreenSetting.Designer.cs">
+      <DependentUpon>ScreenSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIExtertion.cs" />
+    <Compile Include="VentuzHook\HookEntry.cs" />
+    <Compile Include="VZHelp\Animation.cs" />
+    <Compile Include="VZHelp\AniPath.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+    <None Include="Resources\Ventuz6_Designer.dkey" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MatLib\ComponentLibary.resx">
+      <DependentUpon>ComponentLibary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatLib\SearchDialog.resx">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddMarker.resx">
+      <DependentUpon>AddMarker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ScreenSetting.resx">
+      <DependentUpon>ScreenSetting.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Nodes\RNode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitRenderSetup.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InitAVSetup.txt" />
+  </ItemGroup>
+  <Import Project="..\TUIO\TUIO.projitems" Label="Shared" />
+  <Import Project="..\ShareLib\ShareLib.projitems" Label="Shared" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

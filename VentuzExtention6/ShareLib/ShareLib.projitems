@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7dcf26c3-6528-432b-ae88-586382b91485</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ShareLib</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Ayz\CmdLine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ayz\ProgArgsParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Conf\GlobalConf.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Conf\ModConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Conf\INIConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Conf\INIWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Conf\PathHelp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Conf\UnixConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Log\ConsoleLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Log\FileLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Log\LockedLoggerGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Log\Logger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Log\LoggerGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Log\ThreadFileLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Log\UDPBroadCastLog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MidPlug\CPPPlug.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MidPlug\DVPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MidPlug\MidPlug.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MidPlug\WOPlug.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MidPlug\WOProcess.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Native\NativeDyn.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Native\NativeWapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\AsyncTcpClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\AsyncTcpServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\CmdTcpServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\CmdTcpServerShortLen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\PageControlClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\PageControlServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\PageReportClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\SimpleUDPClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\SimpleUDPServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\ThreadModeTCPServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\UDPBroadCastServerAddr.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Packer\DiskFileReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Packer\FileArchiver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Packer\IFileReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Packer\NoneFileReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadUI\CheckGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadUI\IUIStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadUI\SliderPosKeep.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadUI\ToggerCheck.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadUI\ToggerGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadUI\UIStateManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\MenuControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\MenuNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\PageControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\PageInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\PageTreeNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ports\AdiBridge\AdiBridgePort.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ports\AdiBridge\AdiBridgeProtocol.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ports\QXSandTable\NackedPackProtocol.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ports\QXSandTable\QXSTSerialPort.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ports\QXSandTable\QXSTSerialProtocol.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ports\QXSandTable\QXSTSerialProtocol2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ports\QXSandTable\QXSTSerialProtocol3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ports\SerialPort.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Protocol\DeviceBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Protocol\IPackProtocl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Protocol\LenHeadPacker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Protocol\MyMemoryStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Protocol\ResDataProtocl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Protocol\ShortLenHeadPacker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Protocol\StringProtocl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Protocol\StringProtoclShortLen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\Coroutine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\DelayRun.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\DirScan.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\FileSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\Machine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\NetUnity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\RunCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\StrUnity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\ThreadPool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\TriggerChange.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Unity\WinHelp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vals\GlobalEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vals\GlobalFloat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vals\GlobalVals.cs" />
+  </ItemGroup>
+</Project>

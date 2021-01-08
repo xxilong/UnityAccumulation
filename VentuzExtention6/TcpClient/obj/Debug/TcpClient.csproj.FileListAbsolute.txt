@@ -1,0 +1,9 @@
+E:\Projects\C#\VentuzExtention6\TcpClient\bin\Debug\TcpClient.exe.config
+E:\Projects\C#\VentuzExtention6\TcpClient\bin\Debug\TcpClient.exe
+E:\Projects\C#\VentuzExtention6\TcpClient\bin\Debug\TcpClient.pdb
+E:\Projects\C#\VentuzExtention6\TcpClient\obj\Debug\TcpClient.Properties.Resources.resources
+E:\Projects\C#\VentuzExtention6\TcpClient\obj\Debug\TcpClient.csproj.GenerateResource.cache
+E:\Projects\C#\VentuzExtention6\TcpClient\obj\Debug\TcpClient.csproj.CoreCompileInputs.cache
+E:\Projects\C#\VentuzExtention6\TcpClient\obj\Debug\TcpClient.exe
+E:\Projects\C#\VentuzExtention6\TcpClient\obj\Debug\TcpClient.pdb
+E:\Projects\C#\VentuzExtention6\TcpClient\obj\Debug\TcpClient.csprojAssemblyReference.cache

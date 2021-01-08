@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Entry">
+      <UniqueIdentifier>{17e6b6e2-dda5-441f-9f5d-2a86090b579d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VideoManager">
+      <UniqueIdentifier>{d7523811-baa0-433b-80e5-c06bb7f859e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VideoManager\Providers">
+      <UniqueIdentifier>{6e936878-5068-4a48-84c1-24256ac38270}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Entry</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Entry</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\VideoManager.h">
+      <Filter>VideoManager</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\IVideoProvider.h">
+      <Filter>VideoManager</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\Providers\TestVideo.h">
+      <Filter>VideoManager\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\Providers\FPSFilter.h">
+      <Filter>VideoManager\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\Providers\GraspDesktop.h">
+      <Filter>VideoManager\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\Providers\AsyncVideo.h">
+      <Filter>VideoManager\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\Providers\SyncVideo.h">
+      <Filter>VideoManager\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\Providers\VideoFromShareMemory.h">
+      <Filter>VideoManager\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager\Providers\ShareMemory.h">
+      <Filter>VideoManager\Providers</Filter>
+    </ClInclude>
+    <ClInclude Include="IPCameraProc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="IPCameraProc.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager\VideoManager.cpp">
+      <Filter>VideoManager</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager\Providers\TestVideo.cpp">
+      <Filter>VideoManager\Providers</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager\Providers\GraspDesktop.cpp">
+      <Filter>VideoManager\Providers</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager\Providers\AsyncVideo.cpp">
+      <Filter>VideoManager\Providers</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager\Providers\SyncVideo.cpp">
+      <Filter>VideoManager\Providers</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager\Providers\VideoFromShareMemory.cpp">
+      <Filter>VideoManager\Providers</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager\Providers\ShareMemory.cpp">
+      <Filter>VideoManager\Providers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
